@@ -1,0 +1,137 @@
+/* Logo floating animation */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px);
+  }
+  50% { 
+    transform: translateY(-8px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Navigation link underline effect */
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fb1bf1;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* Logo glow effect on hover */
+.logo-container:hover .float-animation {
+  filter: drop-shadow(0 0 20px rgba(251, 27, 241, 0.6));
+}
+
+/* Pulse effect for social icons */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(251, 27, 241, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(251, 27, 241, 0.6);
+  }
+}
+
+.social-icon:hover {
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .float-animation {
+    animation-duration: 2.5s;
+    transform: translateY(-4px);
+  }
+  
+  @keyframes float {
+    0%, 100% { 
+      transform: translateY(0px);
+    }
+    50% { 
+      transform: translateY(-4px);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 7px !important;
+  }
+  
+  .social-icon {
+    font-size: 12px !important;
+  }
+  
+  .float-animation {
+    height: 2.5rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-link {
+    font-size: 6px !important;
+    padding: 0.25rem 0.25rem !important;
+  }
+  
+  .social-icon {
+    font-size: 10px !important;
+    padding: 0.25rem !important;
+  }
+  
+  header {
+    height: 3.5rem !important;
+  }
+  
+  .float-animation {
+    height: 2rem !important;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+  .nav-link {
+    font-size: 5px !important;
+    padding: 0.125rem 0.125rem !important;
+  }
+  
+  .social-icon {
+    font-size: 9px !important;
+  }
+  
+  header {
+    height: 3rem !important;
+  }
+  
+  .float-animation {
+    height: 1.75rem !important;
+  }
+}
+
+/* Custom scrollbar for the page */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fb1bf1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fb1bf1;
+}
