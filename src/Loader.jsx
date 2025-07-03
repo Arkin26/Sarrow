@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-export default function Loader() {
+const Loader = ({ isVisible }) => {
+  if (!isVisible) return null;
+
   return (
-    <div className="fixed inset-0 bg-black flex items-center justify-center z-[9999]">
-      <img
-        src="/images/pink-logo.png" // ✅ correct path for public folder
-        alt="Loading..."
-        className="w-24 h-24 animate-spin"
-      />
+    <div className="fixed inset-0 bg-black z-50 flex items-center justify-center">
+      <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-4 border-gray-300 border-t-[#fb1fb1] rounded-full animate-spin"></div>
     </div>
   );
-}
+};
+
+export default Loader;
