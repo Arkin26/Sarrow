@@ -17,36 +17,83 @@ const teamData = [
     twitter: "https://x.com/ForceMGM",
   },
   {
-    name: "Tool-Founder",
+    name: "Tool-CCO", // Changed from Founder to CCO
     img: "/images/staff/Tool-founder.jpg",
     twitter: "https://x.com/toolmgmt",
   },
   {
     name: "Whoyn-Founder",
     img: "/images/staff/Whoyn-founder.jpg",
-    twitter: "https://x.com/Whoyn_",
+    twitter: "https://x.com/whoyn_?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
   },
   {
     name: "Ziku-CEO",
     img: "/images/staff/Ziku-CEO.jpg",
     twitter: "https://x.com/zikudyor",
   },
-  {
-    name: "Shortcake-Owner",
-    img: "/images/staff/Shortcake-owner.jpg",
-    twitter: "https://x.com/shortcakefn",
-  },
+ 
   {
     name: "Wheels-CSO",
     img: "/images/staff/Wheels-cso.jpg",
-    twitter: "https://x.com/imsixwheels",
+    twitter: "https://x.com/imsixwheels?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
   },
   {
-    name: "Peezy-CFO",
+    name: "Peezy-CGO",
     img: "/images/staff/Peezy-cgo.jpg",
     twitter: "https://x.com/peezywyd",
   },
+  {
+    name: "Jazd-CEO",
+    img: "/images/staff/jazd-CEO.jpg",
+    twitter: "",
+  },
+  {
+    name: "Lique-Co Chairman",
+    img: "/images/staff/lique.jpg",
+    twitter: "n/a",
+  },
+  {
+    name: "Dion-Chairman",
+    img: "/images/staff/dion-Chairman.jpg",
+    twitter: "n/a",
+  },
+  {
+    name: "Yasr-Co Chairman",
+    img: "/images/staff/yasr.jpg",
+    twitter: "https://x.com/nftwtyasr?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
+  },
+  {
+    name: "Zeref-Founder",
+    img: "/images/staff/zeref-Founder.jpg",
+    twitter: "https://x.com/1kzeref?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
+  },
+  {
+    name: "Prem-Higher Up",
+    img: "/images/staff/prem.jpg",
+    twitter: "https://x.com/SarrowGG",
+  },
+  {
+    name: "Tazic-Higher Up",
+    img: "/images/staff/tazic.jpg",
+    twitter: "https://x.com/SarrowGG",
+  },
+  {
+    name: "Syn-CLO",
+    img: "/images/staff/syn.jpg",
+    twitter: "https://x.com/twitchsynergy?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
+  },
+  {
+    name: "Crimp-CGO",
+    img: "/images/staff/crimp.jpg",
+    twitter: "https://x.com/crimpwtv?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
+  },
+  {
+    name: "CJ-Higher Up",
+    img: "/images/staff/cj.jpg",
+    twitter: "https://x.com/cjsmallss?s=21&t=aCb8KZp64yDpoRymZ5sk8whttps://x.com/crimpwtv?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
+  },
 ];
+
 
 const Staff = () => {
   const bannerRef = useRef(null);
