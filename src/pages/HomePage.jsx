@@ -25,8 +25,8 @@ export default function HomePage() {
       <div className="p-0 w-full h-auto overflow-hidden">
         <img
           ref={bannerRef}
-          src="./images/main-banner-optional-2.jpg"
-          alt="Responsive Banner"
+          src="./images/sarrow-new.png"
+          alt="Sarrow Esports Banner"
           className="w-full h-auto object-cover"
         />
       </div>
@@ -39,7 +39,6 @@ export default function HomePage() {
       <Suspense fallback={<div className="text-white text-center p-10">Loading Merch...</div>}>
         <Merch />
       </Suspense>
-      <div className="w-full h-[1px] bg-[#fb1fb1]" />
 
     </>
   );

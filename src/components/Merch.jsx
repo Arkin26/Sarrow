@@ -37,7 +37,7 @@ export default function MerchShowcase() {
     <div className="bg-black text-white py-12 px-4 md:px-12">
       {/* Header */}
       <div className="flex justify-between items-center mb-10">
-        <h1 className="text-6xl font-black DrukWide" style={{ color: "#fb1fb1" }}>
+        <h1 className="text-6xl font-black DrukWide text-[#D4AF37]">
           MERCH
         </h1>
         <a
@@ -84,6 +84,8 @@ export default function MerchShowcase() {
           </a>
         ))}
       </div>
+
+      <div className="w-full h-[1px] bg-[#D4AF37] mt-10" />
     </div>
   );
 }

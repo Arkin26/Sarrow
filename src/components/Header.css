@@ -12,6 +12,12 @@
   animation: float 3s ease-in-out infinite;
 }
 
+/* Tint logo to gold on white header */
+.logo-gold {
+  filter: brightness(0) saturate(100%) invert(77%) sepia(61%) saturate(638%)
+    hue-rotate(359deg) brightness(95%) contrast(89%);
+}
+
 /* Navigation link underline effect */
 .nav-link::before {
   content: '';
@@ -20,7 +26,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #fb1bf1;
+  background: #D4AF37;
   transition: width 0.3s ease-in-out;
 }
 
@@ -29,17 +35,19 @@
 }
 
 /* Logo glow effect on hover */
-.logo-container:hover .float-animation {
-  filter: drop-shadow(0 0 20px rgba(251, 27, 241, 0.6));
+.logo-container:hover .logo-gold {
+  filter: brightness(0) saturate(100%) invert(77%) sepia(61%) saturate(638%)
+    hue-rotate(359deg) brightness(95%) contrast(89%)
+    drop-shadow(0 0 20px rgba(212, 175, 55, 0.6));
 }
 
 /* Pulse effect for social icons */
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 5px rgba(251, 27, 241, 0.3);
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
   }
   50% {
-    box-shadow: 0 0 15px rgba(251, 27, 241, 0.6);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
   }
 }
 
@@ -128,10 +136,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fb1bf1;
+  background: #D4AF37;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #fb1bf1;
+  background: #D4AF37;
 }

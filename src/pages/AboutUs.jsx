@@ -86,7 +86,7 @@ const AboutUs = () => {
             ref={titleRef}
             className="text-3xl sm:text-4xl md:text-5xl text-white DrukWide text-center px-4"
           >
-            <span style={{ color: "#fb1fb1" }}>SARROW</span> ESPORTS
+            <span style={{ color: "#D4AF37" }}>SARROW</span> ESPORTS
           </h1>
         </div>
       </div>
@@ -161,7 +161,7 @@ const AboutUs = () => {
                 >
                   <div
                     className="text-xl sm:text-2xl md:text-3xl font-bold"
-                    style={{ color: "#fb1fb1" }}
+                    style={{ color: "#D4AF37" }}
                   >
                     {stat.value}
                   </div>

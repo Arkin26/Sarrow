@@ -1,32 +1,9 @@
 import { gsap } from "gsap";
 import React, { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaTwitter } from "react-icons/fa";
-
 gsap.registerPlugin(ScrollTrigger);
 
-const teamData = [
-  {
-    name: "Chicken-Pro",
-    img: "/images/roster/Chicken-pro.jpg",
-    twitter: "https://x.com/ChickenItzaa",
-  },
-  {
-    name: "Slick-Pro",
-    img: "/images/roster/slick-pro.jpg",
-    twitter: "https://x.com/SlickTV_",
-  },
-  {
-    name: "Fletch-Pro",
-    img: "/images/roster/fletch-pro.jpg",
-    twitter: "https://x.com/flechfn?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
-  },
-  {
-    name: "Khaz-Pro",
-    img: "/images/roster/Khaz-pro.jpg",
-    twitter: "https://x.com/khaziana1x",
-  },
-];
+const rosterSlots = 4;
 
 const Roster = () => {
   const bannerRef = useRef(null);
@@ -84,7 +61,7 @@ const Roster = () => {
       >
         <h1
           ref={textRef}
-          className="text-black DrukWide text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-8xl"
+          className="text-[#D4AF37] DrukWide text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-8xl"
         >
           ROSTER
         </h1>
@@ -92,33 +69,14 @@ const Roster = () => {
 
       <div className="w-full px-4 sm:px-10 py-10 bg-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 gap-x-6 justify-items-center">
-          {teamData.map((player, index) => (
+          {Array.from({ length: rosterSlots }).map((_, index) => (
             <div
               key={index}
               ref={(el) => (cardsRef.current[index] = el)}
-              className="relative w-[90%] max-w-[280px] aspect-[3/4] [perspective:1000px] group"
+              className="relative w-[90%] max-w-[280px] aspect-[3/4]"
             >
-              <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:rotate-y-180">
-                {/* Front */}
-                <div className="absolute w-full h-full rounded-xl shadow-lg [backface-visibility:hidden]">
-                  <img
-                    src={player.img}
-                    alt={player.name}
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </div>
-                {/* Back */}
-                <div className="absolute w-full h-full bg-[#fb1fb1] rounded-xl text-white flex flex-col items-center justify-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                  <span className="font-bold text-2xl">{player.name}</span>
-                  <a
-                    href={player.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2"
-                  >
-                    <FaTwitter className="text-white text-2xl hover:scale-110 transition-transform" />
-                  </a>
-                </div>
+              <div className="w-full h-full rounded-xl bg-white flex items-center justify-center shadow-[0_0_0_1px_rgba(0,0,0,0.06),0_0_24px_4px_rgba(0,0,0,0.12)]">
+                <span className="text-black font-bold text-4xl DrukWide">TBD</span>
               </div>
             </div>
           ))}

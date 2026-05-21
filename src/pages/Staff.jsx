@@ -7,90 +7,24 @@ gsap.registerPlugin(ScrollTrigger);
 
 const teamData = [
   {
-    name: "Lukacy-CEO",
-    img: "/images/staff/lukacy-CEO.jpg",
-    twitter: "https://x.com/lukacyyy",
-  },
-  {
-    name: "Force-CEO",
-    img: "/images/staff/Force-CEO.jpg",
+    name: "Force",
+    img: "/images/staff/force.jpg",
     twitter: "https://x.com/ForceMGM",
   },
   {
-    name: "Tool-CCO", // Changed from Founder to CCO
-    img: "/images/staff/Tool-founder.jpg",
-    twitter: "https://x.com/toolmgmt",
-  },
-  {
-    name: "Whoyn-Founder",
-    img: "/images/staff/Whoyn-founder.jpg",
-    twitter: "https://x.com/whoyn_?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
-  },
-  {
-    name: "Ziku-CEO",
-    img: "/images/staff/Ziku-CEO.jpg",
-    twitter: "https://x.com/zikudyor",
-  },
- 
-  {
-    name: "Wheels-CSO",
-    img: "/images/staff/Wheels-cso.jpg",
-    twitter: "https://x.com/imsixwheels?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
-  },
-  {
-    name: "Peezy-CGO",
-    img: "/images/staff/Peezy-cgo.jpg",
-    twitter: "https://x.com/peezywyd",
-  },
-  {
-    name: "Jazd-CEO",
-    img: "/images/staff/jazd-CEO.jpg",
+    name: "Jaszd",
+    img: "/images/staff/jaszd.jpg",
     twitter: "",
   },
   {
-    name: "Lique-Co Chairman",
-    img: "/images/staff/lique.jpg",
-    twitter: "n/a",
+    name: "Lukacy",
+    img: "/images/staff/lukacy.jpg",
+    twitter: "https://x.com/lukacyyy",
   },
   {
-    name: "Dion-Chairman",
-    img: "/images/staff/dion-Chairman.jpg",
-    twitter: "n/a",
-  },
-  {
-    name: "Yasr-Co Chairman",
-    img: "/images/staff/yasr.jpg",
-    twitter: "https://x.com/nftwtyasr?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
-  },
-  {
-    name: "Zeref-Founder",
-    img: "/images/staff/zeref-Founder.jpg",
-    twitter: "https://x.com/1kzeref?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
-  },
-  {
-    name: "Prem-Higher Up",
-    img: "/images/staff/prem.jpg",
-    twitter: "https://x.com/SarrowGG",
-  },
-  {
-    name: "Tazic-Higher Up",
-    img: "/images/staff/tazic.jpg",
-    twitter: "https://x.com/SarrowGG",
-  },
-  {
-    name: "Syn-CLO",
-    img: "/images/staff/syn.jpg",
-    twitter: "https://x.com/twitchsynergy?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
-  },
-  {
-    name: "Crimp-CGO",
-    img: "/images/staff/crimp.jpg",
-    twitter: "https://x.com/crimpwtv?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
-  },
-  {
-    name: "CJ-Higher Up",
-    img: "/images/staff/cj.jpg",
-    twitter: "https://x.com/cjsmallss?s=21&t=aCb8KZp64yDpoRymZ5sk8whttps://x.com/crimpwtv?s=21&t=aCb8KZp64yDpoRymZ5sk8w",
+    name: "Zaulty",
+    img: "/images/staff/zaulty.jpg",
+    twitter: "https://x.com/ablezaulty",
   },
 ];
 
@@ -148,9 +82,9 @@ const Staff = () => {
       >
         <h1
           ref={textRef}
-          className="text-black DrukWide text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-8xl"
+          className="text-[#D4AF37] DrukWide text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-8xl"
         >
-          STAFF
+          LEADERSHIP
         </h1>
       </div>
 
@@ -172,16 +106,18 @@ const Staff = () => {
                   />
                 </div>
                 {/* Back */}
-                <div className="absolute w-full h-full bg-[#fb1fb1] rounded-xl text-white flex flex-col items-center justify-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                  <span className="font-bold text-2xl">{player.name}</span>
-                  <a
-                    href={player.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2"
-                  >
-                    <FaTwitter className="text-white text-2xl hover:scale-110 transition-transform" />
-                  </a>
+                <div className="absolute w-full h-full bg-[#D4AF37] rounded-xl text-white flex flex-col items-center justify-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                  <span className="font-bold text-2xl text-white">{player.name}</span>
+                  {player.twitter && (
+                    <a
+                      href={player.twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2"
+                    >
+                      <FaTwitter className="text-white text-2xl hover:scale-110 transition-transform" />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
